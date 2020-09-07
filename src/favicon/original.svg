@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="siritori-kana.svg">
+   sodipodi:docname="original.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="-138.91339"
-     inkscape:cy="299.05657"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="101.49777"
+     inkscape:cy="254.46475"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -56,7 +56,9 @@
      transform="translate(0,-1737)">
     <g
        id="g4548"
-       transform="translate(0,2400)">
+       transform="translate(0,2400)"
+       inkscape:export-xdpi="203.2"
+       inkscape:export-ydpi="203.2">
       <circle
          r="200"
          style="stroke-width:0.26832533"
@@ -72,7 +74,9 @@
     </g>
     <g
        transform="translate(560,2400)"
-       id="g4548-3">
+       id="g4548-3"
+       inkscape:export-xdpi="203.2"
+       inkscape:export-ydpi="203.2">
       <circle
          r="200"
          style="stroke-width:0.26832533"
@@ -88,7 +92,9 @@
     </g>
     <g
        transform="translate(0,1840)"
-       id="g4548-5">
+       id="g4548-5"
+       inkscape:export-xdpi="203.2"
+       inkscape:export-ydpi="203.2">
       <circle
          r="200"
          style="stroke-width:0.26832533"
@@ -104,7 +110,9 @@
     </g>
     <g
        transform="translate(560,1840)"
-       id="g4548-2">
+       id="g4548-2"
+       inkscape:export-xdpi="203.2"
+       inkscape:export-ydpi="203.2">
       <circle
          r="200"
          style="stroke-width:0.26832533"
@@ -122,21 +130,29 @@
        style="fill:#000000;stroke-width:0.26458332"
        d="m 385.76758,1917 c 0,8.0774 0,16.1549 0,24.2324 62.82161,0 125.64323,0 188.46484,0 0,-9.4883 0,-18.9766 0,-28.4648 -62.82161,0 -125.64323,0 -188.46484,0 0,1.4108 0,2.8216 0,4.2324 z"
        id="rect824"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="203.2"
+       inkscape:export-ydpi="203.2" />
     <path
        style="fill:#000000;stroke-width:0.26458332"
        d="m 385.76758,2477 c 0,8.0775 0,16.1549 0,24.2324 62.82161,0 125.64323,0 188.46484,0 0,-9.4883 0,-18.9765 0,-28.4648 -62.82161,0 -125.64323,0 -188.46484,0 0,1.4108 0,2.8216 0,4.2324 z"
        id="rect851"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="203.2"
+       inkscape:export-ydpi="203.2" />
     <path
        style="fill:#000000;stroke-width:0.39028704"
        d="m 326.95489,2353.7228 c 4.47868,6.5997 8.95735,13.1995 13.43603,19.7992 98.35044,-96.5709 196.70088,-193.1418 295.05132,-289.7127 -5.27746,-7.7768 -10.55492,-15.5536 -15.83239,-23.3304 -98.35044,96.5709 -196.70088,193.1417 -295.05132,289.7126 0.79879,1.1771 1.59757,2.3542 2.39636,3.5313 z"
        id="rect851-3"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="203.2"
+       inkscape:export-ydpi="203.2" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot827"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:48px;line-height:1.25;letter-spacing:0px;word-spacing:0px;"><flowRegion
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:48px;line-height:1.25;letter-spacing:0px;word-spacing:0px;"
+       inkscape:export-xdpi="203.2"
+       inkscape:export-ydpi="203.2"><flowRegion
          id="flowRegion829"
          style="font-size:48px;"><rect
            id="rect831"
@@ -149,7 +165,9 @@
        xml:space="preserve"
        id="flowRoot855"
        style="font-style:normal;font-weight:normal;font-size:11.999897px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(21.167247,0,0,21.169354,-3286.2216,-2076.7631)"><flowRegion
+       transform="matrix(21.167247,0,0,21.169354,-3292.2234,-2078.9844)"
+       inkscape:export-xdpi="203.2"
+       inkscape:export-ydpi="203.2"><flowRegion
          id="flowRegion857"
          style="font-size:11.999897px"><rect
            id="rect859"
@@ -163,7 +181,9 @@
        xml:space="preserve"
        id="flowRoot855-3"
        style="font-style:normal;font-weight:normal;font-size:11.999897px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(21.167247,0,0,21.169355,-3849.4729,-2081.7827)"><flowRegion
+       transform="matrix(21.167247,0,0,21.169355,-3850.4021,-2075.5505)"
+       inkscape:export-xdpi="203.2"
+       inkscape:export-ydpi="203.2"><flowRegion
          id="flowRegion857-6"
          style="font-size:11.999897px"><rect
            id="rect859-7"
@@ -177,7 +197,9 @@
        xml:space="preserve"
        id="flowRoot855-35"
        style="font-style:normal;font-weight:normal;font-size:11.999897px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(21.167247,0,0,21.169355,-3287.9901,-1518.518)"><flowRegion
+       transform="matrix(21.167247,0,0,21.169355,-3287.9901,-1518.518)"
+       inkscape:export-xdpi="203.2"
+       inkscape:export-ydpi="203.2"><flowRegion
          id="flowRegion857-62"
          style="font-size:11.999897px"><rect
            id="rect859-9"
@@ -187,11 +209,13 @@
            y="181.5433"
            style="font-size:11.999897px" /></flowRegion><flowPara
          id="flowPara861-1"
-         style="font-size:12.79983521px">語</flowPara></flowRoot>    <flowRoot
+         style="font-size:12.79983521px">り</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot855-2"
        style="font-style:normal;font-weight:normal;font-size:11.999897px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(21.167247,0,0,21.169355,-3850.3004,-1519.3309)"><flowRegion
+       transform="matrix(21.167247,0,0,21.169355,-3858.767,-1519.3309)"
+       inkscape:export-xdpi="203.2"
+       inkscape:export-ydpi="203.2"><flowRegion
          id="flowRegion857-7"
          style="font-size:11.999897px"><rect
            id="rect859-0"
@@ -201,5 +225,17 @@
            y="181.5433"
            style="font-size:11.999897px" /></flowRegion><flowPara
          id="flowPara861-9"
-         style="font-size:12.79983521px">熟</flowPara></flowRoot>  </g>
+         style="font-size:12.79983521px">と</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot847"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:10.66666667px;line-height:1.25;letter-spacing:0px;word-spacing:0px"
+       inkscape:export-xdpi="203.2"
+       inkscape:export-ydpi="203.2"><flowRegion
+         id="flowRegion849"><rect
+           id="rect852"
+           width="190.21173"
+           height="174.65538"
+           x="172.53406"
+           y="150.1945" /></flowRegion><flowPara
+         id="flowPara854" /></flowRoot>  </g>
 </svg>
