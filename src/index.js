@@ -377,7 +377,6 @@ function generateGame() {
           if (route) {
             noRoute = false;
             paint(firsts[j][0], firsts[j][1], firsts[j][2], 1);
-            p();
             xy = paint(route[0], route[1], route[2], idioms[i].length - 2);
             x1 = xy[0];
             y1 = xy[1];

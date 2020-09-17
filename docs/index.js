@@ -54,7 +54,7 @@ function p(){var str='';for(var i=0;i<size;i++){for(var j=0;j<size;j++){str+=mei
 str+='\n';}
 console.log(str);}
 function generateGame(){var generating=true;while(generating){var x1=0;var y1=getRandomInt(1,size-1);var painting=true;counter=0;for(var x=0;x<size;x++){meiro[x]=new Array(size);for(var y=0;y<size;y++){meiro[x][y]=0;}}
-var route=getRoute(x1,y1,-1,idioms[0].length);var xy=paint(x1,y1,route[2],idioms[0].length);x1=xy[0];y1=xy[1];var i=1;while(painting){var firsts=shuffle(getNeighborRoutes(x1,y1));if(firsts.length==0){painting=false;}else{var noRoute=true;for(var j=0;j<firsts.length;j++){route=getRoute(firsts[j][0],firsts[j][1],firsts[j][2],idioms[i].length-2);if(route){noRoute=false;paint(firsts[j][0],firsts[j][1],firsts[j][2],1);p();xy=paint(route[0],route[1],route[2],idioms[i].length-2);x1=xy[0];y1=xy[1];if(x1==0||x1==size-1||y1==0||y1==size-1){painting=false;if(counter>20){generating=false;processed=new Array(counter);}}
+var route=getRoute(x1,y1,-1,idioms[0].length);var xy=paint(x1,y1,route[2],idioms[0].length);x1=xy[0];y1=xy[1];var i=1;while(painting){var firsts=shuffle(getNeighborRoutes(x1,y1));if(firsts.length==0){painting=false;}else{var noRoute=true;for(var j=0;j<firsts.length;j++){route=getRoute(firsts[j][0],firsts[j][1],firsts[j][2],idioms[i].length-2);if(route){noRoute=false;paint(firsts[j][0],firsts[j][1],firsts[j][2],1);xy=paint(route[0],route[1],route[2],idioms[i].length-2);x1=xy[0];y1=xy[1];if(x1==0||x1==size-1||y1==0||y1==size-1){painting=false;if(counter>20){generating=false;processed=new Array(counter);}}
 i+=1;break;}}
 if(noRoute){painting=false;}}}}
 var meiroNode=document.getElementById('meiro');while(meiroNode.firstChild){meiroNode.removeChild(meiroNode.firstChild);}
