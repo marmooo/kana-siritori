@@ -37,15 +37,17 @@
     </style>
   </head>
   <body>
-    <nav id="header" class="navbar navbar-expand navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="/kana-siritori/">カタカナしりとり</a>
-        <div class="navbar-nav">
-          <button title="ダークモード切替" onclick="toggleDarkMode()" class="ml-2 close">🌓</button>
+    <header id="header">
+      <nav class="navbar navbar-expand navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="/kana-siritori/">カタカナしりとり</a>
+          <div class="navbar-nav">
+            <button title="ダークモード切替" onclick="toggleDarkMode()" class="ml-2 close">🌓</button>
+          </div>
         </div>
-      </div>
-    </nav>
-    <div class="container text-center">
+      </nav>
+    </header>
+    <main class="container text-center">
       <noscript>
         <div class="alert alert-warning">JavaScript を ON にしてください</div>
       </noscript>
@@ -75,7 +77,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
     <footer class="pt-4 alert text-center">
       <div>
         <a class="px-1" href="/">Home</a>
