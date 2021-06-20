@@ -1,6 +1,6 @@
 {
-    "name": "カタカナしりとり",
-    "short_name": "カタカナしりとり",
+    "name": "\u30ab\u30bf\u30ab\u30ca\u3057\u308a\u3068\u308a",
+    "short_name": "\u30ab\u30bf\u30ab\u30ca\u3057\u308a\u3068\u308a",
     "icons": [
         {
             "src": "/kana-siritori/favicon/android-chrome-192x192.png",
