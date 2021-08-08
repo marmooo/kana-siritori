@@ -4,7 +4,7 @@ var urlsToCache = [
   '/kana-siritori/index.js',
   '/kana-siritori/index.json',
   '/kana-siritori/favicon/original.svg',
-  'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css',
+  'https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css',
 ];
 
 self.addEventListener('install', function(event) {
