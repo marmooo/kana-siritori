@@ -72,5 +72,5 @@ function getIdioms(){const siritori=generateSiritoriCandidates();const aiueos=Ob
 if(dupricated){break;}}else{break;}}
 if(list.length==30){generating=false;}else{aiueo=aiueos[getRandomInt(0,aiueos.length)];list=[];}}
 return list;}
-const meiroObj=document.getElementById("meiro");resizeFontSize(meiroObj);window.addEventListener("resize",function(){resizeFontSize(meiroObj);});fetch("/kana-siritori/index.json").then((response)=>response.json()).then((data)=>{siritoriList=data;idioms=getIdioms();generateGame();while(solvedPanel.firstChild){solvedPanel.removeChild(solvedPanel.firstChild);}
+const meiroObj=document.getElementById("meiro");resizeFontSize(meiroObj);window.addEventListener("resize",function(){resizeFontSize(meiroObj);});fetch("siritori.json").then((response)=>response.json()).then((data)=>{siritoriList=data;idioms=getIdioms();generateGame();while(solvedPanel.firstChild){solvedPanel.removeChild(solvedPanel.firstChild);}
 showAnswer();});document.getElementById("toggleDarkMode").onclick=toggleDarkMode;document.getElementById("startButton").onclick=startGame;document.getElementById("answerButton").onclick=showAnswer;document.getElementById("hintButton").onclick=showHint;

@@ -555,7 +555,7 @@ window.addEventListener("resize", function () {
   resizeFontSize(meiroObj);
 });
 
-fetch("/kana-siritori/index.json")
+fetch("siritori.json")
   .then((response) => response.json())
   .then((data) => {
     siritoriList = data;

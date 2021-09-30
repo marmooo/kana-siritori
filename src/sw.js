@@ -1,8 +1,8 @@
-var CACHE_NAME = '2021-09-12 08:36';
+var CACHE_NAME = '2021-09-30 09:20';
 var urlsToCache = [
   "/kana-siritori/",
   "/kana-siritori/index.js",
-  "/kana-siritori/index.json",
+  "/kana-siritori/siritori.json",
   "/kana-siritori/favicon/original.svg",
   "https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css",
 ];
