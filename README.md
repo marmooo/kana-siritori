@@ -4,7 +4,7 @@
 
 ## Installation
 
-install [marmooo/ngram-idioms](https://github.com/marmooo/ngram-idioms)
+install [marmooo/ngram-idioms](https://github.com/marmooo/ngram-idioms) licensed under the MIT.
 
 ## Build
 
