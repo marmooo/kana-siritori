@@ -4,7 +4,7 @@
 
 ## Installation
 
-install [marmooo/ngram-idioms](https://github.com/marmooo/ngram-idioms) licensed under the MIT.
+install [marmooo/graded-vocab-ja](https://github.com/marmooo/graded-vocab-ja) licensed under the C-BY 4.0
 
 ## Build
 
