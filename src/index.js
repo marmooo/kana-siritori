@@ -433,59 +433,12 @@ function generateGame() {
 }
 
 function resizeFontSize(node) {
-  // https://stackoverflow.com/questions/118241/
-  function getTextWidth(text, font) {
-    // re-use canvas object for better performance
-    // const canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement("canvas"));
-    const context = tmpCanvas.getContext("2d");
-    context.font = font;
-    const metrics = context.measureText(text);
-    return metrics.width;
-  }
-  function getTextRect(text, fontSize, font, lineHeight) {
-    const lines = text.split("\n");
-    let maxWidth = 0;
-    const fontConfig = fontSize + "px " + font;
-    for (let i = 0; i < lines.length; i++) {
-      const width = getTextWidth(lines[i], fontConfig);
-      if (maxWidth < width) {
-        maxWidth = width;
-      }
-    }
-    return [maxWidth, fontSize * lines.length * lineHeight];
-  }
-  function getNodeRect() {
-    const width = document.getElementById("container").clientWidth;
-    const headerHeight = document.getElementById("header").clientHeight;
-    const startButtonHeight = document.getElementById("startButton").clientHeight;
-    const height = document.documentElement.clientHeight - headerHeight -
-      startButtonHeight;
-    return [width, height];
-  }
-  // function getPaddingRect(style) {
-  //   const width = parseFloat(style.paddingLeft) + parseFloat(style.paddingRight);
-  //   const height = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
-  //   return [width, height];
-  // }
-  const style = getComputedStyle(node);
-  const font = style.fontFamily;
-  const fontSize = 16; // parseFloat(style.fontSize);
-  const lineHeight = 1.1; // parseFloat(style.lineHeight) / fontSize;
-  const nodeRect = getNodeRect();
-  const textRect = getTextRect("禿", fontSize, font, lineHeight);
-  const paddingRect = [remSize * 2 + 21, remSize * 1.5 + 6]; // getPaddingRect(style);
-
-  // https://stackoverflow.com/questions/46653569/
-  // Safariで正確な算出ができないので誤差ぶんだけ縮小化 (10%)
-  const rowFontSize = fontSize * (nodeRect[0] - paddingRect[0]) / 12 /
-    textRect[0] * 0.90;
-  const colFontSize = fontSize * (nodeRect[1] - paddingRect[1]) / 12 /
-    textRect[1] * 0.90;
-  if (colFontSize < rowFontSize) {
-    node.style.fontSize = colFontSize + "px";
-  } else {
-    node.style.fontSize = rowFontSize + "px";
-  }
+  const meiroSize = document.getElementById("meiroOuter").offsetWidth;
+  const margin = 1.2;  // 小さすぎると overflow で表示が崩れる
+  const padding = remSize * 5;
+  const border = 11;
+  const fontSize = (meiroSize - padding - border) / 12 / margin;
+  node.style.fontSize = fontSize + "px";
 }
 
 function toggleDarkMode() {
