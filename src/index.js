@@ -407,8 +407,8 @@ function generateGame() {
       const td = document.createElement("td");
       td.textContent = words[getRandomInt(0, words.length)];
       tr.appendChild(td);
-      td.onclick = function () {
-        this.classList.toggle("table-primary");
+      td.onclick = () => {
+        td.classList.toggle("table-primary");
       };
     }
   }
@@ -433,7 +433,7 @@ function generateGame() {
 }
 
 function resizeFontSize(node) {
-  const meiroSize = document.getElementById("meiroOuter").offsetWidth;
+  const meiroSize = document.getElementById("masu").offsetWidth;
   const margin = 1.2;  // 小さすぎると overflow で表示が崩れる
   const padding = remSize * 5;
   const border = 11;
@@ -504,7 +504,7 @@ function getIdioms() {
 
 const meiroObj = document.getElementById("meiro");
 resizeFontSize(meiroObj);
-window.addEventListener("resize", function () {
+window.addEventListener("resize", () => {
   resizeFontSize(meiroObj);
 });
 
