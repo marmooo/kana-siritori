@@ -1,10 +1,10 @@
-var CACHE_NAME = "2022-09-09 00:20";
+var CACHE_NAME = "2022-09-11 08:49";
 var urlsToCache = [
   "/kana-siritori/",
   "/kana-siritori/index.js",
   "/kana-siritori/siritori.json",
   "/kana-siritori/favicon/favicon.svg",
-  "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css",
+  "https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css",
 ];
 
 self.addEventListener("install", function (event) {
