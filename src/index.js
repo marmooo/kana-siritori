@@ -1,5 +1,4 @@
 const remSize = parseInt(getComputedStyle(document.documentElement).fontSize);
-const tmpCanvas = document.createElement("canvas");
 let siritoriList;
 const size = 10;
 const meiro = new Array(12);
