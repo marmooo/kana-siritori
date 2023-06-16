@@ -38,6 +38,7 @@ async function build(threshold) {
       }
     }
   }
+  fileReader.close();
   Deno.writeTextFile("src/siritori.json", JSON.stringify(siritori, null, "\t"));
 }
 
