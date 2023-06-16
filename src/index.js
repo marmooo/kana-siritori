@@ -405,7 +405,6 @@ function generateGame() {
     meiroNode.appendChild(tr);
     for (let y = 0; y < size; y++) {
       const td = document.createElement("td");
-      td.role = "button";
       td.textContent = words[getRandomInt(0, words.length)];
       tr.appendChild(td);
       td.onclick = () => {
