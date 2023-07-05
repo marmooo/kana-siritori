@@ -36,14 +36,27 @@
       #masu { width:100%; max-height:calc(100vh - 140px); aspect-ratio:1/1; }
       #table { height:100%; table-layout:fixed; }
       #meiro { line-height:1.1; touch-action:manipulation; }
-      td { padding: 0.25rem !important; }
-      html[data-theme="dark"] { filter: invert(1) hue-rotate(180deg) brightness(1.5); }
-      @-moz-document url-prefix() { html[data-theme="dark"] { background-color:black; } }
+      td { padding: 0.25rem !important; cursor:pointer; }
+      html[data-bs-theme="dark"] .navbar-brand > img { filter: invert(1) hue-rotate(180deg); }
+      html[data-bs-theme="dark"] .table-danger { filter: invert(0.9) hue-rotate(180deg); border-color:var(--bs-gray-700); }
+      html[data-bs-theme="dark"] .table-primary { filter: invert(0.9) hue-rotate(180deg); border-color:var(--bs-gray-700); }
+      html[data-bs-theme="dark"] .table-secondary { filter: invert(0.9) hue-rotate(180deg); border-color:var(--bs-gray-700); }
+      html[data-bs-theme="dark"] .btn-light {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: var(--bs-gray-800);
+        --bs-btn-border-color: var(--bs-gray-800);
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: var(--bs-gray-700);
+        --bs-btn-hover-border-color: var(--bs-gray-600);
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: var(--bs-gray-600);
+        --bs-btn-active-border-color: var(--bs-gray-500);
+      }
     </style>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand navbar-light">
+      <nav class="navbar navbar-expand">
         <div class="container flex-wrap">
           <a class="navbar-brand" href="/kana-siritori/">
             <img alt="カタカナしりとり" src="/kana-siritori/favicon/favicon.svg" width="32" height="32">

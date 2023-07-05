@@ -14,7 +14,17 @@ loadConfig();
 
 function loadConfig() {
   if (localStorage.getItem("darkMode") == 1) {
-    document.documentElement.dataset.theme = "dark";
+    document.documentElement.setAttribute("data-bs-theme", "dark");
+  }
+}
+
+function toggleDarkMode() {
+  if (localStorage.getItem("darkMode") == 1) {
+    localStorage.setItem("darkMode", 0);
+    document.documentElement.setAttribute("data-bs-theme", "light");
+  } else {
+    localStorage.setItem("darkMode", 1);
+    document.documentElement.setAttribute("data-bs-theme", "dark");
   }
 }
 
@@ -439,16 +449,6 @@ function resizeFontSize(node) {
   const border = 11;
   const fontSize = (meiroSize - padding - border) / 12 / margin;
   node.style.fontSize = fontSize + "px";
-}
-
-function toggleDarkMode() {
-  if (localStorage.getItem("darkMode") == 1) {
-    localStorage.setItem("darkMode", 0);
-    delete document.documentElement.dataset.theme;
-  } else {
-    localStorage.setItem("darkMode", 1);
-    document.documentElement.dataset.theme = "dark";
-  }
 }
 
 function generateSiritoriCandidates() {
