@@ -148,69 +148,6 @@ function showAnswer() {
   answerButton.classList.add("d-none");
 }
 
-function _getNeighborText(trs, x, y, direction) {
-  let text = trs[x].children[y].textContent;
-  if (direction == 1) {
-    if (meiro[x - 1][y] != 0) {
-      text += trs[x - 1].children[y].textContent;
-    }
-  } else if (direction == 2) {
-    if (meiro[x + 1][y] != 0) {
-      text += trs[x + 1].children[y].textContent;
-    }
-  } else if (direction == 3) {
-    if (meiro[x][y - 1] != 0) {
-      text += trs[x].children[y - 1].textContent;
-    }
-  } else {
-    if (meiro[x][y + 1] != 0) {
-      text += trs[x].children[y + 1].textContent;
-    }
-  }
-  return text;
-}
-
-function _setNeighborText(trs, x, y, direction, text, isAnswer) {
-  if (!isAnswer) {
-    trs[x].children[y].textContent = text[0];
-  }
-  if (direction == 1) {
-    trs[x - 1].children[y].textContent = text[1];
-  } else if (direction == 2) {
-    trs[x + 1].children[y].textContent = text[1];
-  } else if (direction == 3) {
-    trs[x].children[y - 1].textContent = text[1];
-  } else {
-    trs[x].children[y + 1].textContent = text[1];
-  }
-}
-
-function _generateRandomText(text, isAnswer) {
-  if (isAnswer) {
-    const first = text[0];
-    for (let i = 0; i < 5; i++) { // どうしても熟語ができてしまうケースがあるため回数打ち切り
-      text = first + words[getRandomInt(0, words.length)];
-      if (!includeIdiom(text)) return text;
-    }
-  } else {
-    for (let i = 0; i < 5; i++) { // どうしても熟語ができてしまうケースがあるため回数打ち切り
-      for (let j = 0; j < 2; j++) {
-        text[j] = words[getRandomInt(0, words.length)];
-      }
-      if (!includeIdiom(text)) return text;
-    }
-  }
-  return text;
-}
-
-function includeIdiom(text) {
-  if (idioms.includes(text.slice(0, 2))) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
 function startGame() {
   while (solvedPanel.firstChild) {
     solvedPanel.removeChild(solvedPanel.firstChild);
@@ -342,17 +279,6 @@ function paint(x, y, direction, n) {
     }
     return [x, y + n - 1];
   }
-}
-
-function _p() {
-  let str = "";
-  for (let i = 0; i < size; i++) {
-    for (let j = 0; j < size; j++) {
-      str += meiro[i][j];
-    }
-    str += "\n";
-  }
-  console.log(str);
 }
 
 function generateGame() {
@@ -504,7 +430,7 @@ function getIdioms() {
 
 const meiroObj = document.getElementById("meiro");
 resizeFontSize(meiroObj);
-window.addEventListener("resize", () => {
+globalThis.addEventListener("resize", () => {
   resizeFontSize(meiroObj);
 });
 
