@@ -1,4 +1,4 @@
-import { readLines } from "https://deno.land/std/io/mod.ts";
+import { TextLineStream } from "jsr:@std/streams/text-line-stream";
 
 function smallToBig(str) {
   const pos = "ァィゥェォヵヶッャュョヮ".indexOf(str);
@@ -19,10 +19,11 @@ function isIdiom(word) {
 
 async function build(threshold) {
   const siritori = {};
-  const fileReader = await Deno.open(
-    `graded-vocab-ja/dist/0.csv`,
-  );
-  for await (const line of readLines(fileReader)) {
+  const file = await Deno.open("graded-vocab-ja/dist/0.csv");
+  const lineStream = file.readable
+    .pipeThrough(new TextDecoderStream())
+    .pipeThrough(new TextLineStream());
+  for await (const line of lineStream) {
     const arr = line.split(",");
     const word = arr[0];
     const count = parseInt(arr[1]);
@@ -38,7 +39,6 @@ async function build(threshold) {
       }
     }
   }
-  fileReader.close();
   Deno.writeTextFile("src/siritori.json", JSON.stringify(siritori, null, "\t"));
 }
 
